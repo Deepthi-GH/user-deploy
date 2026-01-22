@@ -1,5 +1,8 @@
 deployment:
   imageRepo: 485658242739.dkr.ecr.us-east-1.amazonaws.com/roboshop/user
   imageVersion: IMAGE_VERSION
+configMap:
+  REDIS_URL: "redis://redis:6379"
+  MONGO_URL: "mongodb://mongodb:27017/users"
 service:
-  servicePort: 8080 # default value
+  servicePort: 8080
