@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: user
-        image: "{{ .Values.deployment.imageRepo }}:{{ .Values.deployment.imageVersion}}"
+        image: "{{ .values.deployment.imageRepo }}:{{ .values.deployment.imageVersion}}"
         imagePullPolicy: Always
         envFrom:
         - configMapRef:
